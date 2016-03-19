@@ -10,7 +10,21 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require jquery.min
+//= require modernizr
+//= require device.min
+//= require imagesloaded.pkgd
+//= require SmoothScroll
+//= require isotope
+//= require jquery.isotope.sloppy-masonry.min
+//= require jquery.parallax.min
+//= require jquery.scrollTo
+//= require waypoints.min
+//= require jquery.mb.YTPlayer
+//= require jquery.magnific-popup.min
+//= require wow.min
+//= require retina.min
+//= require owl.carousel.min
+//= require typed
+//= require jquery.soc-share
+//= require custom
