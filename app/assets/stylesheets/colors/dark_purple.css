@@ -129,7 +129,7 @@ footer .logo span {
     background: transparent;
     border: 1px solid #6e5e55;
 }
-/* =========================================================== 
+/* ===========================================================
     5.  Additional Dark Background Colors
 ============================================================ */
 
@@ -205,31 +205,31 @@ a:hover, a:active {
     border: 1px solid #D9C6B1;
 }
 #story .quote .corners-topright {
-    background: url(assets/elements/corner-violet.png);
+    background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-violet.png");
 }
 #story .quote .corners-topleft {
-    background: url(assets/elements/corner-violet.png);
+    background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-violet.png");
 }
 #story .quote .corners-bottomright {
-    background: url(assets/elements/corner-violet2.png);
+    background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-violet2.png");
 }
 #story .quote .corners-bottomleft {
-    background: url(assets/elements/corner-violet2.png);
+    background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-violet2.png");
 }
 .corners-topright {
-    background: url(assets/elements/corner-darkTwo.png);
+    background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-darkTwo.png");
 }
 .corners-topleft {
-    background: url(assets/elements/corner-darkTwo.png);
+    background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-darkTwo.png");
 }
 .corners-bottomright {
-    background: url(assets/elements/corner-darkTwo2.png);
+    background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-darkTwo2.png");
 }
 .corners-bottomleft {
-    background: url(assets/elements/corner-darkTwo2.png);
+    background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-darkTwo2.png");
 }
 .pattern, #wedding-events .timeline .column.heart:after {
-	background: #152829 url(assets/bgs/BG-crisp-paper-ruffles.png);
+	background: #152829 url("https://d13a0hp1k8a4rs.cloudfront.net/bgs/BG-crisp-paper-ruffles.png");
 }
 footer {
     background: #152829;
