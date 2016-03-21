@@ -510,33 +510,33 @@ if (!Array.prototype.indexOf) {
         $('.accordion .contents').hide();
         $('.accordion .active').next().slideDown('normal');
 
-        /* Twitter - open get_tweets.php and populate file with your info.
-        ==================================================================================== */
-        $('.tweets').each(function() {
-            var $this = $(this);
-
-            $.getJSON("twitter/get_tweets.php?get=" + $this.attr('id'), function(data) {
-
-                if (data) {
-                    var tweets = '';
-
-                    $.each(data, function() {
-                        var tweet = '<div class="tweet">';
-                        tweet += '<span class="one-tweet">' + this.text + '</span>';
-                        tweet += '<span class="time">' + this.time_ago + ' ago</span>';
-                        tweet += '</div>';
-
-                        tweets += tweet;
-                    });
-
-                    $this.prepend(tweets);
-                }
-
-            }).always(function() {
-                //twitterCarousel();
-            });
-
-        });
+        // /* Twitter - open get_tweets.php and populate file with your info.
+        // ==================================================================================== */
+        // $('.tweets').each(function() {
+        //     var $this = $(this);
+        //
+        //     $.getJSON("twitter/get_tweets.php?get=" + $this.attr('id'), function(data) {
+        //
+        //         if (data) {
+        //             var tweets = '';
+        //
+        //             $.each(data, function() {
+        //                 var tweet = '<div class="tweet">';
+        //                 tweet += '<span class="one-tweet">' + this.text + '</span>';
+        //                 tweet += '<span class="time">' + this.time_ago + ' ago</span>';
+        //                 tweet += '</div>';
+        //
+        //                 tweets += tweet;
+        //             });
+        //
+        //             $this.prepend(tweets);
+        //         }
+        //
+        //     }).always(function() {
+        //         //twitterCarousel();
+        //     });
+        //
+        // });
 
         /* Instagram Script - change Tag to yours and update ClientId
         ==================================================================================== */
@@ -741,7 +741,7 @@ if (!Array.prototype.indexOf) {
         //get security question
         function setFormAutoValue(cb) {
             $.ajax({
-                'url': 'action.php',
+                'url': '/contact',
                 'data': {
                     get_auto_value: ''
                 },
