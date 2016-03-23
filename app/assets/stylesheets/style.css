@@ -643,7 +643,7 @@ a.button i {
     vertical-align: bottom;
 }
 .hero {
-    background-image: url("https://d13a0hp1k8a4rs.cloudfront.net/hero.jpg");
+    /*background-image: url("https://d13a0hp1k8a4rs.cloudfront.net/hero.jpg");*/
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -763,7 +763,7 @@ a.button i {
 }
 .hero .hero-slideshow .slide {
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: center right;
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -1225,10 +1225,10 @@ a.button i {
     z-index: 9;
 }
 #couple .girl {
-    background-image: url("https://d13a0hp1k8a4rs.cloudfront.net/couple_her.jpg");
+    background-image: url("https://d13a0hp1k8a4rs.cloudfront.net/nam-solo-2.jpg");
 }
 #couple .boy {
-    background-image: url("https://d13a0hp1k8a4rs.cloudfront.net/couple_him.jpg");
+    background-image: url("https://d13a0hp1k8a4rs.cloudfront.net/neel-solo.jpg");
 }
 #couple .images .column > span {
     position: absolute;
@@ -1239,7 +1239,7 @@ a.button i {
 #couple .fname {
     color: #D9C6B1;
     font-family: 'Playfair Display', serif;
-    font-size: 64px;
+    font-size: 52px;
     text-transform: uppercase;
     letter-spacing: 10px;
 }
