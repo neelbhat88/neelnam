@@ -763,7 +763,7 @@ a.button i {
 }
 .hero .hero-slideshow .slide {
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center center;
     background-size: cover;
     position: absolute;
     top: 0px;
