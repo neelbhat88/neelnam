@@ -1448,7 +1448,6 @@ a.button i {
     height: 100%;
 }
 .parallax {
-    background-image: url("https://d13a0hp1k8a4rs.cloudfront.net/flowers.jpg");
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -1461,6 +1460,11 @@ a.button i {
     background-repeat: no-repeat !important;
     padding: 0;
 }
+
+.parallax1 {
+  background-image: url("https://d13a0hp1k8a4rs.cloudfront.net/parallax_lake.jpg");
+}
+
 .parallax h2.quote {
     position: relative;
     height: 100%;
