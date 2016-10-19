@@ -177,6 +177,10 @@ iframe {
         /* for ie 8 */
     }
 }
+
+.theme-color {
+  color: $main-color;
+}
 /* ===========================================================
     2. Misc and Re-usable Elements
 ============================================================ */
@@ -341,6 +345,9 @@ a.button i {
     content: '';
     background-color: #D9C6B1;
 }
+.timeline .box-content p {
+  font-size: 16px;
+}
 .timeline .column {
     position: relative;
 }
@@ -354,7 +361,7 @@ a.button i {
     background-color: #fff;
 }
 .timeline .movetop {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .timeline .column.right:after {
     right: -11px;
@@ -718,14 +725,10 @@ a.button i {
     letter-spacing: 2px;
 }
 .hero .info .date {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 180px;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
     color: #fff;
     letter-spacing: 1px;
 }
@@ -1273,6 +1276,13 @@ a.button i {
     margin: 40px auto;
     padding: 60px 160px;
 }
+#story .icon-container {
+  text-align: center;
+  font-size: 38px;
+  color: #D9C6B1;
+  padding-bottom: 25px;
+}
+
 .social ul li {
     display: inline-block;
     margin: 0 5px;
@@ -1433,6 +1443,9 @@ a.button i {
     margin-bottom: 60px;
     margin-top: -180px;
 }
+.box.quote.dark {
+  color: #ad9e8d;
+}
 .box.quote span {
     display: block;
 }
@@ -1471,8 +1484,18 @@ a.button i {
     display: table-cell;
     vertical-align: middle;
     color: #fff;
+    text-shadow: 1px 1px #000000;
     text-align: center;
     font: 34px/56px 'Playfair Display', serif;
+}
+
+.parallax .note {
+  position: absolute;
+  width: 100%;
+  color: white;
+  left:0;
+  bottom: 10px;
+  text-align: center;
 }
 /* ===========================================================
     11.  Wedding Events
@@ -2023,7 +2046,7 @@ select {
 #map-pins li.hotels {
     background-position: 0 -160px;
 }
-#map-pins li.restoraunts {
+#map-pins li.restaurants {
     background-position: 0 -192px;
 }
 #map-pins li.shopping {
@@ -2037,7 +2060,7 @@ select {
 }
 #map {
     width: 100%;
-    height: 480px;
+    height: 700px;
 }
 #map img {
     max-width: none;
@@ -2048,7 +2071,8 @@ select {
     line-height: 22px;
 }
 #map .info_content {
-    min-height: 100px;
+    // min-height: 100px;
+    width: 300px;
 }
 /* ===========================================================
     20.  Footer
@@ -2780,6 +2804,7 @@ ul.double-angle li:before {
         margin: 0px auto 0 auto;
         padding: 40px 20px;
     }
+
     .timeline {
         padding-bottom: 40px;
     }

@@ -11,15 +11,22 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCATi0hvluzn3_SLt6onu9hmCNOVIRLE-w&callback=initMap"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Favicons
   ================================================== -->
-  <link rel="shortcut icon" href="assets/elements/favicon.ico">
-  <link rel="apple-touch-icon" href="assets/elements/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/elements/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/elements/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/elements/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/elements/apple-touch-icon-180x180.png" />
+  <link rel="shortcut icon" href="https://d13a0hp1k8a4rs.cloudfront.net/elements/favicon.ico">
+  <link rel="apple-touch-icon" href="https://d13a0hp1k8a4rs.cloudfront.net/elements/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://d13a0hp1k8a4rs.cloudfront.net/elements/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="https://d13a0hp1k8a4rs.cloudfront.net/elements/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="https://d13a0hp1k8a4rs.cloudfront.net/elements/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://d13a0hp1k8a4rs.cloudfront.net/elements/apple-touch-icon-180x180.png" />
+
+  <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+  <script src="https://use.fontawesome.com/6c7c21f4cb.js"></script>
 
   <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,7 +40,5 @@
 <body>
 
 <%= yield %>
-
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYvj29r7Ed0Q0nEMIIUHoJLTKgMUkq5t0;sensor=false"></script> -->
 </body>
 </html>

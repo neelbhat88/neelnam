@@ -331,135 +331,141 @@ if (!Array.prototype.indexOf) {
         /* Google Map
         ==================================================================================== */
         // google.maps.event.addDomListener(window, 'load', init);
-        //
-        // function init() {
-        //     if (typeof markers == 'undefined' || $.type(markers) != 'array') {
-        //         return;
-        //     }
-        //
-        //     var markerImages = {
-        //         airport: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 0),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344)},
-        //         hotel: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 58),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344)},
-        //         restaurant: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 116),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344) },
-        //         shopping: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 174),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344) },
-        //         attraction: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 232),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344) },
-        //         special: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 54),origin: new google.maps.Point(0, 290),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344) },
-        //
-        //         bachelor: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 0),anchor: new google.maps.Point(26.5, 68),scaledSize: new google.maps.Size(53, 372) },
-        //         bachelorette: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 93),anchor: new google.maps.Point(26.5, 68),scaledSize: new google.maps.Size(53, 372) },
-        //         wedding: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 186),anchor: new google.maps.Point(26.5, 68),scaledSize: new google.maps.Size(53, 372) },
-        //         weddingParty: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 279),anchor: new google.maps.Point(26.5, 68),scaledSize: new google.maps.Size(53, 372) },
-        //     };
-        //
-        //     var mapOptions = {
-        //         scrollwheel: false,
-        //         zoom: 16,
-        //     //    center: new google.maps.LatLng(44.7679455, 17.1909169), // New York
-        //         styles: [{
-        //             "featureType": "road",
-        //             "elementType": "labels",
-        //             "stylers": [{
-        //                 "visibility": "simplified"
-        //             }, {
-        //                 "lightness": 20
-        //             }]
-        //         }, {
-        //             "featureType": "administrative.land_parcel",
-        //             "elementType": "all",
-        //             "stylers": [{
-        //                 "visibility": "off"
-        //             }]
-        //         }, {
-        //             "featureType": "landscape.man_made",
-        //             "elementType": "all",
-        //             "stylers": [{
-        //                 "visibility": "off"
-        //             }]
-        //         }, {
-        //             "featureType": "transit",
-        //             "elementType": "all",
-        //             "stylers": [{
-        //                 "visibility": "off"
-        //             }]
-        //         }, {
-        //             "featureType": "road.local",
-        //             "elementType": "labels",
-        //             "stylers": [{
-        //                 "visibility": "simplified"
-        //             }]
-        //         }, {
-        //             "featureType": "road.local",
-        //             "elementType": "geometry",
-        //             "stylers": [{
-        //                 "visibility": "simplified"
-        //             }]
-        //         }, {
-        //             "featureType": "road.highway",
-        //             "elementType": "labels",
-        //             "stylers": [{
-        //                 "visibility": "simplified"
-        //             }]
-        //         }, {
-        //             "featureType": "poi",
-        //             "elementType": "labels",
-        //             "stylers": [{
-        //                 "visibility": "off"
-        //             }]
-        //         }, {
-        //             "featureType": "road.arterial",
-        //             "elementType": "labels",
-        //             "stylers": [{
-        //                 "visibility": "off"
-        //             }]
-        //         }, {
-        //             "featureType": "water",
-        //             "elementType": "all",
-        //             "stylers": [{
-        //                 "hue": "#a1cdfc"
-        //             }, {
-        //                 "saturation": 30
-        //             }, {
-        //                 "lightness": 49
-        //             }]
-        //         }, {
-        //             "featureType": "road.highway",
-        //             "elementType": "geometry",
-        //             "stylers": [{
-        //                 "hue": "#f49935"
-        //             }]
-        //         }, {
-        //             "featureType": "road.arterial",
-        //             "elementType": "geometry",
-        //             "stylers": [{
-        //                 "hue": "#fad959"
-        //             }]
-        //         }]
-        //     };
-        //
-        //     var mapElement = document.getElementById('map');
-        //     var map = new google.maps.Map(mapElement, mapOptions);
-        //     var infoWindow = new google.maps.InfoWindow();
-        //     var bound = new google.maps.LatLngBounds();
-        //     for (var i = 0; i < markers.length; i++) {
-        //
-        //         var marker = new google.maps.Marker({
-        //             position: new google.maps.LatLng(markers[i][1], markers[i][2]),
-        //             map: map,
-        //             icon: markerImages[markers[i][3]],
-        //             title: markers[i][0],
-        //             infoContent: markers[i][4]
-        //         });
-        //
-        //         bound.extend(marker.position);
-        //         google.maps.event.addListener(marker, 'click', function() {
-        //
-        //             infoWindow.setContent('<div class="info_content"><h3>' + this.title + '</h3><p>' + this.infoContent + '</p></div>');
-        //             infoWindow.open(map, this);
-        //         });
-        //
-        //     };
-        //     map.fitBounds(bound);
-        // }
+
+        window.initMap = function() {
+          var markers = [
+            ["Black Canyon Inn, Estes Park CO", 40.386468, -105.5209501, "wedding", "We both immediately fell in love with Black Canyon Inn when we found it. The view of the mountains from the pavilion is absolutely breathtaking. We can't wait for everyone to enjoy the scenery during our ceremony!"],
+            ["Wild Basin Lodge, Allenspark CO", 40.2190343, -105.5329687, "weddingParty", "We wanted a cozy, outdoorsy, and rustic feel for our reception. Wild Basin Lodge was exactly what we were looking for. Come prepared for some fun and dancing late into the night!"],
+            // ["Denver International Airport", 39.8560963, -104.6737376, "airport", "Info here"]
+          ]
+
+          if (typeof markers == 'undefined' || $.type(markers) != 'array') {
+              return;
+          }
+
+            var markerImages = {
+                airport: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 0),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344)},
+                hotel: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 58),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344)},
+                restaurant: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 116),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344) },
+                shopping: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 174),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344) },
+                attraction: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 58),origin: new google.maps.Point(0, 232),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344) },
+                special: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-small-red1.png',size: new google.maps.Size(35, 54),origin: new google.maps.Point(0, 290),anchor: new google.maps.Point(17.5, 40),scaledSize: new google.maps.Size(35, 344) },
+
+                bachelor: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 0),anchor: new google.maps.Point(26.5, 68),scaledSize: new google.maps.Size(53, 372) },
+                bachelorette: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 93),anchor: new google.maps.Point(26.5, 68),scaledSize: new google.maps.Size(53, 372) },
+                wedding: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 186),anchor: new google.maps.Point(26.5, 68),scaledSize: new google.maps.Size(53, 372) },
+                weddingParty: { url:'https://d13a0hp1k8a4rs.cloudfront.net/map/MapPins-big-red1.png',size: new google.maps.Size(53, 93),origin: new google.maps.Point(0, 279),anchor: new google.maps.Point(26.5, 68),scaledSize: new google.maps.Size(53, 372) },
+            };
+
+            var mapOptions = {
+                scrollwheel: false,
+                zoom: 12,
+                center: new google.maps.LatLng(40.3051642, -105.5115995), // Estes Park
+                styles: [{
+                    "featureType": "road",
+                    "elementType": "labels",
+                    "stylers": [{
+                        "visibility": "simplified"
+                    }, {
+                        "lightness": 20
+                    }]
+                }, {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "all",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "landscape.man_made",
+                    "elementType": "all",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "labels",
+                    "stylers": [{
+                        "visibility": "simplified"
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "visibility": "simplified"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "labels",
+                    "stylers": [{
+                        "visibility": "simplified"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "labels",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [{
+                        "hue": "#a1cdfc"
+                    }, {
+                        "saturation": 30
+                    }, {
+                        "lightness": 49
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "hue": "#f49935"
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "hue": "#fad959"
+                    }]
+                }]
+            };
+
+            var mapElement = document.getElementById('map');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var infoWindow = new google.maps.InfoWindow();
+            var bound = new google.maps.LatLngBounds();
+            for (var i = 0; i < markers.length; i++) {
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(markers[i][1], markers[i][2]),
+                    map: map,
+                    icon: markerImages[markers[i][3]],
+                    title: markers[i][0],
+                    infoContent: markers[i][4]
+                });
+
+                bound.extend(marker.position);
+                google.maps.event.addListener(marker, 'click', function() {
+
+                    infoWindow.setContent('<div class="info_content"><h3>' + this.title + '</h3><div>' + this.infoContent + '</div></div>');
+                    infoWindow.open(map, this);
+                });
+
+            };
+            map.fitBounds(bound);
+        }
 
         /* Theme Tabs
         ==================================================================================== */
@@ -620,7 +626,7 @@ if (!Array.prototype.indexOf) {
         /* Simple Countdown Timer - change belows date to specific one you want.
         ==================================================================================== */
         if($("#countdown").length) {
-            CountDownTimer('12/08/2015 12:00 AM', 'countdown');
+          CountDownTimer('07/22/2017 12:00 AM', 'countdown');
         }
         function CountDownTimer(dt, id) {
             var end = new Date(dt);
@@ -632,27 +638,28 @@ if (!Array.prototype.indexOf) {
             var timer;
 
             function showRemaining() {
-                var now = new Date();
-                var distance = end - now;
-                if (distance < 0) {
+              var now = new Date();
+              var distance = end - now;
 
-                    clearInterval(timer);
-                    document.getElementById(id).innerHTML = 'DETAILS TO COME!';
+              if (distance < 0) {
 
-                    return;
-                }
-                var days = Math.floor(distance / _day);
-                var hours = Math.floor((distance % _day) / _hour);
-                var minutes = Math.floor((distance % _hour) / _minute);
-                var seconds = Math.floor((distance % _minute) / _second);
+                  clearInterval(timer);
+                  // document.getElementById(id).innerHTML = distance;
 
-                document.getElementById(id).innerHTML = days + '<span>days</span>';
-                document.getElementById(id).innerHTML += hours + '<span>hours</span>';
-                document.getElementById(id).innerHTML += minutes + '<span>minutes</span>';
-                document.getElementById(id).innerHTML += seconds + '<span>seconds</span>';
+                  return;
+              }
+              var days = Math.floor(distance / _day);
+              var hours = Math.floor((distance % _day) / _hour);
+              var minutes = Math.floor((distance % _hour) / _minute);
+              var seconds = Math.floor((distance % _minute) / _second);
+
+              document.getElementById(id).innerHTML = days + '<span>days</span>';
+              document.getElementById(id).innerHTML += hours + '<span>hours</span>';
+              document.getElementById(id).innerHTML += minutes + '<span>minutes</span>';
+              document.getElementById(id).innerHTML += seconds + '<span>seconds</span>';
             }
 
-            timer = setInterval(showRemaining, 1000);
+            timer = setInterval(showRemaining, 100);
         }
 
         /* Contact Form
@@ -770,7 +777,7 @@ if (!Array.prototype.indexOf) {
             });
         });
 
-        setFormAutoValue();
+        // setFormAutoValue();
 
         //ajax contact form
         $form.isValid({
