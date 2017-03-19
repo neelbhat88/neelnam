@@ -1871,10 +1871,16 @@ a.button i {
 .bgcolor h3.section-title, .bgcolor .section-tagline, .bgcolor .form label {
     color: #fff;
 }
-#contact h3.section-title:before {
+#rsvp h3.section-title:before {
     content: "\e00a";
     color: #fff;
 }
+
+#rsvp .container.smaller {
+  max-width: 450px;
+  text-align: center;
+}
+
 .form label {
     text-transform: uppercase;
     font-weight: 700;
@@ -1987,6 +1993,16 @@ select {
     font-size: 34px;
     transition: all 0.2s;
     opacity: 0;
+}
+
+.button.typeform-share {
+  background-color: #fff;
+  padding: 10px 40px;
+  font-size: 18px;
+}
+
+.button.typeform-share.hidden {
+  display: none;
 }
 /* ===========================================================
     19.  Map Section

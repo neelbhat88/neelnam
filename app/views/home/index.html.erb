@@ -47,13 +47,13 @@
                       </ul>
                     </li> -->
                     <li><a href="#wedding-events">Events</a></li>
+                    <li><a href="#rsvp">RSVP</a></li>
                     <li><a href="#story">Info</a></li>
                     <li><a href="#loveline">Loveline</a></li>
                     <li><a href="#wedding-gallery">Gallery</a></li>
                     <!-- <li><a href="#important-people">People</a></li>
                     <li><a href="#gift-registry">Gifts</a></li>
-                    <li><a href="#guestbook">GuestBook</a></li>
-                    <li><a href="#contact">RSVP</a></li> -->
+                    <li><a href="#guestbook">GuestBook</a></li> -->
                   </ul>
                 </nav>
                 <a href="#" id="menu-toggle-wrapper">
@@ -66,10 +66,10 @@
     </header>
 
     <!-- RSVP Now -->
-    <!-- <section id="invitation" class="pattern">
-        <span>You’re invited to our Wedding!</span>
-        <a id="to-rsvp" href="#contact" class="button scrollTo">RSVP NOW</a>
-    </section> -->
+    <section id="invitation" class="">
+        <span>The big day is almost here. And you know what that means. It's time to RSVP!</span>
+        <a href="#rsvp" class="button scrollTo">RSVP NOW</a>
+    </section>
     <!-- #RSVP Now -->
 
     <!-- Couple Images -->
@@ -224,6 +224,63 @@
         </div>
     </section>
     <!-- #Wedding Events Section Ends -->
+
+    <!-- Contact Section -->
+    <section id="rsvp" class="bgcolor">
+        <header class="section-header">
+            <h3 class="section-title">RSVP</h3>
+            <p class="section-tagline">
+              You have been invited to our wedding! To RSVP, you will need our wedding code which you'll find
+                on the RSVP card insert in our invitation.
+
+              <br/><br/>
+              Please RSVP <strong>before June 10, 2017</strong>.
+            </p>
+        </header>
+        <div class="form">
+            <div class="container smaller">
+                <div class="row">
+                    <form action="/contact"  method="POST" autocomplete="off" class="actionform">
+                        <div class="notification"></div>
+                        <div class="">
+                            <label for="wedding-code">Please enter our wedding code to RSVP</label>
+                            <input type="text" id="wedding-code" name="wedding-code">
+                        </div>
+
+                        <a id="rsvp-now" href="https://neelbhat.typeform.com/to/QLjGvE" target="_blank"
+                           data-mode="popup" class="button scrollTo typeform-share hidden">RSVP NOW</a>
+                        <script> (function() { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://s3-eu-west-1.amazonaws.com/share.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "share.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+                        <!-- <div class="column six">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div class="column six">
+                            <label for="subject">Number of guests</label>
+                            <select name="subject" id="subject">
+                                <option value="One" disabled selected="selected"> How many persons?</option>
+                                <option value="One">One</option>
+                                <option value="Two">Two</option>
+                                <option value="Three">Three</option>
+                                <option value="Four">Four</option>
+                                <option value="Five">Five</option>
+                                <option value="Six">Six</option>
+                            </select>
+                        </div>
+                        <div class="column six auto-safe">
+                            <label for="autovalue">Security question</label>
+                            <input type="text" id="autovalue" name="autovalue">
+                            <i class="fa fa-refresh auto-refresh" title="Reload security question"></i>
+                        </div>
+                        <input type="hidden" name="submit">
+                        <div class="clearfix"></div>
+                        <input type="submit" value="RSVP Now"> -->
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #Contact Section -->
 
     <!-- Parallax Section -->
     <section class="parallax parallax1" data-type="parallax">
@@ -801,53 +858,6 @@
         </div>
     </section> -->
     <!-- #Instagram Section Ends -->
-
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="bgcolor">
-        <header class="section-header">
-            <h3 class="section-title">SIGN YOUR RSVP</h3>
-            <p class="section-tagline">Please RSVP before 20 December 2015.</p>
-        </header>
-        <div class="form">
-            <div class="container smaller">
-                <div class="row">
-                    <form action="/contact"  method="POST" autocomplete="off" class="actionform">
-                        <div class="notification"></div>
-                        <div class="column six">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name">
-                        </div>
-                        <div class="column six">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email">
-                        </div>
-                        <div class="column six">
-                            <label for="subject">Number of guests</label>
-                            <select name="subject" id="subject">
-                                <option value="One" disabled selected="selected"> How many persons?</option>
-                                <option value="One">One</option>
-                                <option value="Two">Two</option>
-                                <option value="Three">Three</option>
-                                <option value="Four">Four</option>
-                                <option value="Five">Five</option>
-                                <option value="Six">Six</option>
-                            </select>
-                        </div>
-                        <div class="column six auto-safe">
-                            <label for="autovalue">Security question</label>
-                            <input type="text" id="autovalue" name="autovalue">
-                            <i class="fa fa-refresh auto-refresh" title="Reload security question"></i>
-                        </div>
-                        <input type="hidden" name="submit">
-                        <div class="clearfix"></div>
-                        <input type="submit" value="I am attending &rarr;">
-                        <div class="clearfix"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- #Contact Section -->
 
     <!-- Footer Section -->
     <footer>
