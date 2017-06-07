@@ -197,23 +197,23 @@ a:hover, a:active {
 #map-pins li {
     color: #666;
 }
-#story .quote {
+#info .quote {
     background: #ea3b46;
     color: #fff;
 }
-#story .box.corner:before {
+#info .box.corner:before {
     border: 1px solid #D5C3ad;
 }
-#story .quote .corners-topright {
+#info .quote .corners-topright {
     background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-red.png");
 }
-#story .quote .corners-topleft {
+#info .quote .corners-topleft {
     background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-red.png");
 }
-#story .quote .corners-bottomright {
+#info .quote .corners-bottomright {
     background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-red2.png");
 }
-#story .quote .corners-bottomleft {
+#info .quote .corners-bottomleft {
     background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-red2.png");
 }
 .corners-topright {

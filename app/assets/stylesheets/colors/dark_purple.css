@@ -197,23 +197,23 @@ a:hover, a:active {
 .details span, .quote span {
     color: #D9C6B1;
 }
-#story .quote {
+#info .quote {
     background: #8e44ad;
     color: #fff;
 }
-#story .box.corner:before {
+#info .box.corner:before {
     border: 1px solid #D9C6B1;
 }
-#story .quote .corners-topright {
+#info .quote .corners-topright {
     background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-violet.png");
 }
-#story .quote .corners-topleft {
+#info .quote .corners-topleft {
     background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-violet.png");
 }
-#story .quote .corners-bottomright {
+#info .quote .corners-bottomright {
     background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-violet2.png");
 }
-#story .quote .corners-bottomleft {
+#info .quote .corners-bottomleft {
     background: url("https://d13a0hp1k8a4rs.cloudfront.net/elements/corner-violet2.png");
 }
 .corners-topright {

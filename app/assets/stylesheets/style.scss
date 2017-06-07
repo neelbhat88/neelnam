@@ -1268,15 +1268,15 @@ a.button i {
     8.  Story Section
 ============================================================ */
 
-#story {
+#info {
     padding-top: 80px;
 }
-#story .quote {
+#info .quote {
     font: 26px/46px 'Playfair Display', serif;
     margin: 40px auto;
     padding: 60px 160px;
 }
-#story .icon-container {
+#info .icon-container {
   text-align: center;
   font-size: 38px;
   color: #D9C6B1;
@@ -2818,18 +2818,18 @@ ul.double-angle li:before {
     }
     /* Story */
 
-    #story .column {
+    #info .column {
         margin-bottom: 60px;
         text-align: center;
     }
-    #story .timeline:before, #story .arrow-up, #story .arrow-down, #important-people .timeline:before, #important-people .arrow-up, #important-people .arrow-down, #twitter .timeline:before, #twitter .arrow-up, #twitter .arrow-down {
+    #info .timeline:before, #info .arrow-up, #info .arrow-down, #important-people .timeline:before, #important-people .arrow-up, #important-people .arrow-down, #twitter .timeline:before, #twitter .arrow-up, #twitter .arrow-down {
         display: none;
     }
     #twitter .follow {
         margin-top: 10px;
         margin-bottom: 55px;
     }
-    #story .quote {
+    #info .quote {
         font: 18px/32px 'Playfair Display', serif;
         margin: 0px auto 0 auto;
         padding: 40px 20px;
