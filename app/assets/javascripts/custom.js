@@ -519,6 +519,7 @@ window.initMap = function() {
   var markers = [
     ["Black Canyon Inn, Estes Park CO", 40.386468, -105.5209501, "wedding", "We both immediately fell in love with Black Canyon Inn when we found it. The view of the mountains from the pavilion is absolutely breathtaking. We can't wait for everyone to enjoy the scenery during our ceremony!"],
     ["Wild Basin Lodge, Allenspark CO", 40.2190343, -105.5329687, "weddingParty", "We wanted a cozy, outdoorsy, and rustic feel for our reception. Wild Basin Lodge was exactly what we were looking for. Come prepared for some fun and dancing late into the night!"],
+    ["Trout Haven Resourt, Estes Park CO", 40.3656422, -105.5386378, "restaurant", "An informal lunch hosted by our parents!"],
     // ["Denver International Airport", 39.8560963, -104.6737376, "airport", "Info here"]
   ]
 
